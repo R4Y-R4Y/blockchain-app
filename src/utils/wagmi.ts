@@ -1,10 +1,10 @@
 import { http, createConfig } from 'wagmi'
-import { goerli, mainnet, sepolia } from 'wagmi/chains'
+import { mainnet, sepolia } from 'wagmi/chains'
 import { metaMask } from 'wagmi/connectors'
 
 export const config = createConfig({
   chains: [
-    goerli
+    sepolia
   ],
   
   connectors: [
@@ -12,7 +12,7 @@ export const config = createConfig({
   ],
   ssr: true,
   transports: {
-    [goerli.id]: http(),
+    [sepolia.id]: http(),
   },
 })
 
