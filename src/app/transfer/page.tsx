@@ -5,8 +5,7 @@ import { useAccount } from "wagmi";
 
 export default function TransferPage(){
   const { address } = useAccount()
-  const [recieverAddress, setRecieverAddress] = useState<`0x${string}` | undefined>(undefined)
-  const {writeContract} = useWriteErc20Transfer();
+  const { writeContract } = useWriteErc20Transfer();
   
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -28,7 +27,14 @@ export default function TransferPage(){
   
   return(<>
     <form onSubmit={handleSubmit}>
-      <input type="text" name="token"/>
+      <div>
+        Token:
+        <input type="text" name="token"/>
+      </div>
+      <div>
+        Reciever:
+        <input type="text" name="reciever"/>
+      </div>
       <button type="submit">Submit</button>
     </form>
   </>)
