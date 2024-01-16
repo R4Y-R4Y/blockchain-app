@@ -6,28 +6,28 @@ This is an ERC20 Token Transfer built using the following stack:
     <tr>
         <td align="center" margin= "0 20px 0 20px">
             <a href="https://www.typescriptlang.org/">
-                <img src="https://raw.githubusercontent.com/R4Y-repo/blockchain-app/master/img/nextjs.png" alt="Next JS logo" width="100">
+                <img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/nextjs.png?raw=true" alt="Next JS logo" width="100">
                 <br>
                 Next JS
             </a>
         </td>
         <td align="center" margin= "0 20px 0 20px">
             <a href="https://www.fastify.io/">
-                <img src="https://raw.githubusercontent.com/R4Y-repo/blockchain-app/master/img/react.png" alt="React logo" width="100">
+                <img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/react.png?raw=true" alt="React logo" width="100">
                 <br>
                 React
             </a>
         </td>
         <td align="center" margin= "0 20px 0 20px">
             <a href="https://www.prisma.io/">
-                <img src="https://raw.githubusercontent.com/R4Y-repo/blockchain-app/master/img/tailwindcss.png" alt="Prisma logo" width="100">
+                <img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/tailwindcss.png?raw=true" alt="Prisma logo" width="100">
                 <br>
                 Tailwind CSS
             </a>
         </td>
         <td align="center"  margin=" 0 20px 0 20px">
             <a href="https://www.postgresql.org/">
-                <img src="https://raw.githubusercontent.com/R4Y-repo/blockchain-app/master/img/wagmi" width="100">
+                <img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/wagmi.png?raw=true" width="100">
                 <br>
                 Wagmi
             </a>
@@ -37,9 +37,6 @@ This is an ERC20 Token Transfer built using the following stack:
 
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/R4Y-repo/web_services_project#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
   <a href="https://github.com/R4Y-repo/web_services_project/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
@@ -91,13 +88,13 @@ The user can also transfer to other wallets some of their tokens
 ## Routes:
 
 - Home page: `/`
-<img src="https://raw.githubusercontent.com/R4Y-repo/web_services_project/master/img/home.png" alt="Home Page">
+<img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/home.png?raw=true" alt="Home Page">
 
 - Token page: `/token`
-<img src="https://raw.githubusercontent.com/R4Y-repo/web_services_project/master/img/token.png" alt="Token Page">
+<img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/token.png?raw=true" alt="Token Page">
 
 - Transfer page: `/transfer`
-<img src="https://raw.githubusercontent.com/R4Y-repo/web_services_project/master/img/transfer.png" alt="Transfer Page">
+<img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/transfer.png?raw=true" alt="Transfer Page">
 
 
 ## Author
