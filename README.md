@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to ERC20 Token Transfer Project 👋</h1>
 
-This is an ERC20 Token Transfer built using the following stack:
+This is an ERC20 Token Transfer Project built using the following stack:
 
 <table >
     <tr>
