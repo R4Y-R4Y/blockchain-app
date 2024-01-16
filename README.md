@@ -69,7 +69,6 @@ npm run dev
 - `dev`: Start the development server
 - `build`: Build web application
 - `gen`: Generate Wagmi ERC20 hooks
-- `lint`: Run code analysis
 
 
 ## Wagmi features used
@@ -85,7 +84,25 @@ The user can sign in with their Metamask wallet and check for the tokens in his 
 
 The user can also transfer to other wallets some of their tokens
 
-## Routes:
+## Methodology
+
+I had to work on the Sepolia testing blockchain to work with the Frontend before production
+
+This can be easily configured in `src\utils\wagmi.ts`
+
+In this file, it is easy to configure what connectors to use (MetaMask) and what ethereum network the app will work with (Sepolia)
+
+The next step was to use the ERC20 ABI in an efficient way
+
+Using the `gen` command, I generated hooks that can be used in the frontend in real time
+
+This has facilitated the development process and made it easier to integrate the functionalities of ERC20 Tokens in the Frontend
+
+Then the UI design is done using Tailwind CSS for simple styling
+
+These methodologies ensures a better Developer Experience and Code Maintenance
+
+## Routes
 
 - Home page: `/`
 <img src="https://github.com/R4Y-R4Y/blockchain-app/blob/main/img/home.png?raw=true" alt="Home Page">

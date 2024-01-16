@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "gen": "wagmi generate",
-    "lint": "next lint"
+    "gen": "wagmi generate"
   },
   "dependencies": {
     "@tanstack/react-query": "5.0.5",
