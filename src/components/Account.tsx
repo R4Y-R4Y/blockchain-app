@@ -1,5 +1,5 @@
 "use client"
-import { useAccount, useBalance, useConnect, useDisconnect } from 'wagmi'
+import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
 
 export function Account(){
@@ -10,7 +10,7 @@ export function Account(){
   return(
 
 
-        <div className="border border-gray-300 p-2 m-2 rounded-lg">
+        <div className="border border-blue-500 p-2 m-2 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Account</h2>
 
           <div className="mb-4">
@@ -23,14 +23,14 @@ export function Account(){
             </p>
           </div>
 
-          <button
+          {account.status === 'disconnected' && <button
             key={connector.uid}
             onClick={() => connect({ connector })}
             type="button"
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-4"
           >
-            Connect with {connector.name}
-          </button>
+            Connect with Metamask
+          </button>}
 
           {account.status === 'connected' && (
             <button

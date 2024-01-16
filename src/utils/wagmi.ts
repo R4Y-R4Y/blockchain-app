@@ -1,6 +1,6 @@
 import { http, createConfig } from 'wagmi'
 import { mainnet, sepolia } from 'wagmi/chains'
-import { metaMask } from 'wagmi/connectors'
+import { injected, metaMask } from 'wagmi/connectors'
 
 export const config = createConfig({
   chains: [
@@ -8,6 +8,7 @@ export const config = createConfig({
   ],
   
   connectors: [
+    injected(),
     metaMask(),
   ],
   ssr: true,
