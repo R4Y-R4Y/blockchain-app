@@ -3,6 +3,7 @@ import { useWriteErc20Transfer } from "@/utils/erc20";
 import { BaseError, parseEther } from "viem";
 import { useRouter } from 'next/navigation'
 import { useAccount } from "wagmi";
+import Link from "next/link";
 export default function TransferPage(){
   const { data, isPending, isSuccess, error, writeContract } = useWriteErc20Transfer();
   const router = useRouter()
@@ -54,7 +55,16 @@ export default function TransferPage(){
         <button type="button" onClick={() => router.push("/")} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline self-end">Back to home page</button>
       </div>
       {isPending && <p>Loading...</p>}
-      {isSuccess && <p>Success! Transaction: {data}</p>}
+      {isSuccess && <>
+        <p>Transaction done successfully!</p>
+        <Link 
+          href={"https://sepolia.etherscan.io/tx/" + data} 
+          className="text-blue-500 underline hover:text-blue-700" 
+          target="_blank" rel="noreferrer"
+        >
+          Check it here
+        </Link>
+      </> }
       {error &&  <h3 className="text-red-500 mb-2">Error: 
         {(error as BaseError).shortMessage || error.message}
       </h3>}
